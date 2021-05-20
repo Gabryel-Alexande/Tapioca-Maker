@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Classes.Central>
+  <ingredientesCadastrados>
+    <Classes.Ingrediente>
+      <nome>queijo</nome>
+      <preco>1.0</preco>
+      <id>1560486578247</id>
+      <disponibilidadeDoIngrediente>true</disponibilidadeDoIngrediente>
+      <valorCaloricoDoIngrediente>1.0</valorCaloricoDoIngrediente>
+    </Classes.Ingrediente>
+  </ingredientesCadastrados>
+  <tapiocasCadastradas/>
+  <administrador>
+    <nome>hans</nome>
+    <idade>21</idade>
+    <email>hans2HOT.COM</email>
+    <estadoCivil>Solteiro(a)</estadoCivil>
+    <sexo></sexo>
+    <senha>41</senha>
+    <dataDeNascimento>1998-03-06 03:00:00.0 UTC</dataDeNascimento>
+  </administrador>
+  <pedidosCadastrados/>
+</Classes.Central>
