@@ -110,7 +110,10 @@ private Ingrediente ingrediente;
 					ingrediente.setNome(nome);
 					ingrediente.setValorCaloricoDoIngrediente(calorias);
 					ingrediente.setDisponibilidade(disp);
+
+//o problema está aqui
 					Persistencia p = new Persistencia();
+//quando você recupera a central de novo, o objeto ingrediente que você está editando não é o mesmo objeto que está salvo na central (é como se fosse uma cópia)
 					Central c = p.recuperarCentral();
 					p.salvarCentral(c);
 					
@@ -143,7 +146,7 @@ private Ingrediente ingrediente;
 	}
 
 	private void adicionarComboBox() {
-		String[]opcoes = {"Sim","N�o"};
+		String[]opcoes = {"Sim","N�o"};
 		JCDisponibilidade = new JComboBox<String>(opcoes);
 		JCDisponibilidade.setBounds(290,70,60,20);
 		add(JCDisponibilidade);
@@ -155,7 +158,7 @@ private Ingrediente ingrediente;
 		texto.setBounds(10,20,40,20);
 		add(texto);
 		
-		texto = new JLabel("Pre�o");
+		texto = new JLabel("Pre�o");
 		texto.setBounds(10,70 ,40,20);
 		add(texto);
 		
